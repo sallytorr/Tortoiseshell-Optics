@@ -2,8 +2,11 @@
 
 html {
   font-size: 18px;
-  line-height: 1.4rem;
   font-family: Helvetica, sans-serif;
+  background-color: white;
+}
+body {
+    line-height: 1.4rem;
 }
 
 /*container*/
@@ -11,7 +14,6 @@ html {
  .container {
    width: 960px;
    margin: 0 auto;
-   display: flex;
  }
 
 /*Header*/
@@ -91,63 +93,50 @@ nav span {
 }
 
 /*icons*/
+.supporting {
+  display: flex;
+  justify-content: center;
+}
 
-.services {
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
   height: 8rem;
-  display: flex;
-  justify-content: center;
-  margin: 3rem auto;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.items {
-  max-width: 5rem;
-  margin: 0 3rem;
-}
-.items img {
-  display: flex;
-  justify-content: center;
-  max-width: 5rem;
-}
-.items.exams img{
-  display: flex;
-  justify-content: center;
-  max-width: 3.5rem;
-}
-.items p {
+  margin: 3rem;
   text-align: center;
-  margin: 0 auto;
+  position: relative;
+  top: -5rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service .paper img  {
+  width: 3.5rem;
 }
 
 /*About*/
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 5rem;
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
 }
 
-.philosophy .appointment {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-right:5%;
-}
-
-h5 {
-  background-color: cadetblue;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
+.heading {
+  max-width: 10rem;
   padding: 0.5rem 1.25rem;
-  text-align: left;
-  max-width: 35%;
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
 }
 
 .about p {
-  margin-top: 1rem;
-  max-width: 35%;
+  padding: 1rem 0;
   line-height: 1.4rem;
 }
 
@@ -167,4 +156,67 @@ h5 {
 }
 .footer img {
   height: 1.5rem;
+}
+
+/*media querie*/
+
+@media only screen and (max-width:1024px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    width: 100%;
+    margin: 0;
+  }
+  .banner {
+    height: 22rem;
+  }
+  .slogan {
+    padding: 0.75rem 4rem;
+    top:5rem;
+    margin-right: 2rem;
+
+  }
+  .slogan h2 {
+    font-size: 1.33rem;
+  }
+  .service {
+    margin-bottom: 0;
+  }
+  .about {
+    margin: 0 auto;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+  }
+  nav span {
+    display: none;
+  }
+  .mobile-menu {
+    display: inline-block;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1rem;
+  }
+  .banner {
+    height: 17rem;
+  }
+  .slogan {
+    padding: 1rem auto;
+    display: flex;
+    justify-content: center;
+    top:9rem;
+    width: 100%;
+  }
 }
