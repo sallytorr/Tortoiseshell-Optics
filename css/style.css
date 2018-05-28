@@ -2,7 +2,7 @@
 
 html {
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.4rem;
   font-family: Helvetica, sans-serif;
 }
 
@@ -96,20 +96,68 @@ nav span {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.items img {
-  max-width: 5rem;
-}
 .items {
   max-width: 5rem;
   margin: 0 3rem;
 }
+.items img {
+  display: flex;
+  justify-content: center;
+  max-width: 5rem;
+}
 .items.exams img{
+  display: flex;
+  justify-content: center;
   max-width: 3.5rem;
 }
 .items p {
   text-align: center;
+  margin: 0 auto;
 }
 
 /*About*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.philosophy .appointment {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right:5%;
+}
+
+h5 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+  max-width: 35%;
+}
+
+.about p {
+  margin-top: 1rem;
+  max-width: 35%;
+  line-height: 1.4rem;
+}
 
 /*footer*/
+
+.footer {
+  display: flex;
+  margin: 4rem 4rem;
+  background-color: azure;
+}
+.footer span {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.footer img {
+  height: 1.5rem;
+}
