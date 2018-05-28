@@ -1,0 +1,170 @@
+/*html*/
+
+html {
+  font-size: 18px;
+  line-height: 1.4rem;
+  font-family: Helvetica, sans-serif;
+}
+
+/*container*/
+
+ .container {
+   width: 960px;
+   margin: 0 auto;
+   display: flex;
+ }
+
+/*Header*/
+
+.header {
+  width: 960px;
+  background-color: cadetblue;
+  display: flex;
+  margin: 1rem auto;
+  position: sticky;
+  z-index: 2;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height:1.5rem;
+}
+
+header nav {
+  flex-grow: 1;
+  text-align: right;
+}
+
+nav span {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/*Banner*/
+
+.banner {
+  background-image: url("/Users/Sally/Documents/Code Academy Projects/Tortoiseshell_Optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  top: -5rem;
+}
+
+.slogan {
+  width: auto;
+  position: relative;
+  right: -2rem;
+  display: block;
+  justify-content: flex-end;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin: 10rem 0 0 19rem;
+}
+
+.slogan h2 {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  line-height: 1.2;
+}
+
+/*icons*/
+
+.services {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.items {
+  max-width: 5rem;
+  margin: 0 3rem;
+}
+.items img {
+  display: flex;
+  justify-content: center;
+  max-width: 5rem;
+}
+.items.exams img{
+  display: flex;
+  justify-content: center;
+  max-width: 3.5rem;
+}
+.items p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*About*/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.philosophy .appointment {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right:5%;
+}
+
+h5 {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  text-align: left;
+  max-width: 35%;
+}
+
+.about p {
+  margin-top: 1rem;
+  max-width: 35%;
+  line-height: 1.4rem;
+}
+
+/*footer*/
+
+.footer {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 4rem;
+  background-color: azure;
+}
+.footer span {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.footer img {
+  height: 1.5rem;
+}
